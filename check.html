@@ -3,6 +3,7 @@
 
 <head>
     <title>INDjobs.in</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAYHIxME4Uh2WHMCahgP4t-U9MvzNjm_B6tXbjU5-yg&s);
@@ -36,55 +37,31 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
-        input[type="submit"] {
-            background-color: #78bc7a;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #228d27;
-        }
-
-        input[type="reset"] {
-            background-color: #aa4756;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        input[type="reset"]:hover {
-            background-color: #FF0000;
-        }
     </style>
-</head>`
+</head>
 
 <body>
-    
+
     <h1>🇮🇳 Bharat Jobs 🇮🇳</h1>
-    <marquee>NAMO NAMAH</marquee>
-    
 
     <form>
         <fieldset>
             <legend>Register Here</legend>
             <label for="firstname">First Name:</label>
             <input type="text" name="firstname" placeholder="eg. Chaitanya">
-            
+
             <label for="lastname">Last Name:</label>
             <input type="text" name="lastname" placeholder="eg. Dalvi"><br>
-            
+
             <label for="dob">Enter Date Of Birth:</label>
             <input type="date" name="dob"><br>
-            
+
             <label for="address">Enter Your Address:</label><br>
             <textarea name="address" rows="3" cols="30"></textarea><br>
 
             <label for="Mobile number">Mobile number:</label>
-            <input type="tel" name="mobile no"><br>
-            
+            <input type="tel" name="userid"><br>
+
             Gender:
             <input type="radio" name="gender" value="male" checked> Male
             <input type="radio" name="gender" value="female">Female
@@ -94,7 +71,7 @@
             <label for="State">Enter Your State:</label>
             <input list="State" name="State" required>
             <datalist id="State">
-                 Options for states
+                Options for states
                 <option value="Andhra Pradesh"></option>
                 <option value="Arunachal Pradesh"></option>
                 <option value="Assam"></option>
@@ -122,7 +99,7 @@
                 <option value="Uttarakhand"></option>
                 <option value="West Bengal"></option>
             </datalist><br>
-            
+
             <label for="domain">Enter your Domain:</label>
             <select name="domain">
                 <!-- Options for domain -->
@@ -131,9 +108,9 @@
                 <option value="Data Analyst">Data Analyst</option>
                 <option value="Backend">Backend</option>
             </select><br>
-            
+
             <label for="Language">Preferred Programming Language:</label>
-            
+
             <select id="Language">
                 <!-- Options for browsers -->
                 <option value="Python">Python</option>
@@ -152,12 +129,18 @@
                 <option value="Assistant Commissioner">Assistant Commissioner</option>
                 <option value="Assistant Executive Engineer">Assistant Executive Engineer</option>
             </select><br>
-            
-            <input type="submit" name="submit" value="Submit"> <br>
-            
-            <input type="reset" name="reset" value="Cancel">
+            <br>
+
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Submit
+            </button><br>
+            <br>
+
+            <button type="reset" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Cancel
+            </button>
         </fieldset>
     </form>
 </body>
 
-</html> 
+</html>
